@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+ class date
+ {
+ 	int d,m,y;
+ 	public:date(int d ,int m, int y)
+	{
+ 		this->d=d;
+ 		this->m=m;
+ 		this->y=y;
+ 		
+ 	}
+ 		 void display()
+ 		 
+  {
+  	cout<<"date:"<<d<<"month:"<<m<<"year:"<<y<<endl;
+  	
+	   
+	 }
+  	 
+ };
+ 
+ template <class T>
+ 
+  void swapvalues(T &values1,T &values2)
+ {
+ 	T temp=values1;
+ 	values1=values2;
+ 	values2= temp;
+ 	
+ }
+ 
+ 
+ int main()
+ {
+ 	date d1(12,5,2);
+ 	date d2(13,6,8);
+ 	swapvalues(d1,d2);
+ 	d1.display();
+ 	d2.display();
+ 	return 0;
+ }
